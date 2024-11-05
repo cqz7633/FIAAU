@@ -65,14 +65,14 @@ The FastQ sample file is provided as below:
 
 | column1| column2 |
 |--------|---------|
-| /path/control_re1_r1.fq.gz | control |
-| /path/control_re1_r2.fq.gz | control |
-| /path/control_re2_r1.fq.gz | control |
-| /path/control_re2_r2.fq.gz | control |
-| /path/treatment_re1_r1.fq.gz | treatment |
-| /path/treatment_re1_r2.fq.gz | treatment |
-| /path/treatment_re2_r1.fq.gz | treatment |
-| /path/treatment_re2_r2.fq.gz | treatment |
+| /path/control_rep1_R1.fq.gz | control |
+| /path/control_rep1_R2.fq.gz | control |
+| /path/control_rep2_R1.fq.gz | control |
+| /path/control_rep2_R2.fq.gz | control |
+| /path/treatment_rep1_R1.fq.gz | treatment |
+| /path/treatment_rep1_R2.fq.gz | treatment |
+| /path/treatment_rep2_R1.fq.gz | treatment |
+| /path/treatment_rep2_R2.fq.gz | treatment |
 
 #### BAM information file
 The sample file of FastQ, the first column is the absolute path of the BAM file. The second column is sample information, used to provide control and treatment group information in the BAM files.
@@ -81,9 +81,9 @@ The BAM sample file is provided as below:
 
 | column1| column2 |
 |--------|---------|
-| /path/control_re1.bam| control |
-| /path/control_re2.bam | control |
-| /path/treatment_re1.bam | treatment |
-| /path/treatment_re2.bam | treatment |
+| /path/control_rep1.bam| control |
+| /path/control_rep2.bam | control |
+| /path/treatment_rep1.bam | treatment |
+| /path/treatment_rep2.bam | treatment |
 
 ## Run FIAAU pipline
