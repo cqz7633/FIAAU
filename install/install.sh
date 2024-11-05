@@ -7,7 +7,7 @@ check_install(){
 		echo "Package $1 is installed."
 	else
 		cpan $1
-fi
+	fi
 }
 
 # install perl pkgs
