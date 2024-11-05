@@ -33,7 +33,7 @@ bash install.sh
 ### 1. Mouse annotation(mm10) of methods
 
 We provide annotation files for the 3'UTR of mouse mm10 required for APAtrap, CSI-UTR, DaPars, diffUTR, LABRAT, and QAPA. This annotation is based on the integration of GENCODE and PolyA_DB3 databases and can be downloaded from [Google Drive](https://drive.google.com/file/d/1ki3yKC0YcGy36pWV0XFleV3_Za3rh7aQ/view?usp=drive_link).
-After downloading and decompressing, move the `mm10` directory and all files to the `/FIAAU/anno`. The file structure is provided as below:
+After downloading and decompressing, move the `mm10` directory to the `/FIAAU/anno`. The file structure is provided as below:
 ```
 FIAAU/  
 └── anno  
