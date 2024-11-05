@@ -4,7 +4,7 @@ We have integrated the processes and results of APAtrap, CSI-UTR, DaPars, diffUT
 ![Overview](./images/FIAAU_pipline.png)
 
 ## Installation
-The installation process requires Perl and Conda, so you need to install them first.
+The installation process requires `Perl` and `Conda`, so you need to install them first.
 
 ### Create Environment with Conda
 First, download the repository and create the environment.
