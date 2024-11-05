@@ -85,3 +85,5 @@ The BAM sample file is provided as below:
 | /path/control_re2.bam | control |
 | /path/treatment_re1.bam | treatment |
 | /path/treatment_re2.bam | treatment |
+
+## Run FIAAU pipline
