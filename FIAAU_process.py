@@ -81,7 +81,6 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 #====================== annotation =========================#
 #dapars anno
 dapars_bed = script_dir + "/anno/mm10/dapars_anno.bed"
-#csiutr anno 如果要改anno,不改csiutr代码的情况下只能改/public/home/qzchen/software/csiutr/CSI-UTR-master/CSI-UTR_v1.1.0/data下的两个注释
 csiutr_bed = script_dir + "/anno/mm10/csi.bed"
 csiutr_anno = script_dir + "/anno/mm10/csi_anno.bed"
 csiutr_anno_dir = script_dir + "/apps/CSI-UTR/CSI-UTR_v1.1.0/data"
