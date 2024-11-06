@@ -41,10 +41,18 @@ p_int = args$p_int
 p_met = args$p_met
 qapa_cut = args$qapa_cut
 
+check_path = function(path){
+  if (grepl("^/", path)) {
+    path = path  
+  } else {
+    path = paste0(getwd(), "/", path)	  
+  }	
+  return(path)
+}  
 
 print_log = function(log){
-	current_time <- format(Sys.time(), "[%Y-%m-%d %H:%M:%S]")
-	cat(paste0(current_time, " ", log, "\n"))
+  current_time <- format(Sys.time(), "[%Y-%m-%d %H:%M:%S]")
+  cat(paste0(current_time, " ", log, "\n"))
 }
 
 create_utr_merge_list = function(merge_utr_path){
@@ -545,7 +553,8 @@ create_num_df = function(res_list, method_input, pred_key, gene_anno){
   apa_num_df$method = factor(apa_num_df$method, levels = unique(apa_num_df$method))
   return(apa_num_df)
 }
-
+				   
+fiaau_dir = check_path(fiaau_dir)
 out_dir = paste0(fiaau_dir,"/FIAAU_integrate/")
 if(!dir.exists(out_dir)){
   print_log(paste0("Create FIAAU integrate file: ", fiaau_dir, "/FIAAU_integrate"))
