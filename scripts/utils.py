@@ -1,6 +1,12 @@
 import os 
 import time
 
+def check_path(path):
+    if os.path.isabs(path):
+        path = path
+    else:
+        path = os.getcwd()  + "/" + path
+
 def create_file(input_path):
     if not os.path.exists(input_path):
         os.mkdir(input_path)
