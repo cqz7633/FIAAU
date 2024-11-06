@@ -6,6 +6,7 @@ def check_path(path):
         path = path
     else:
         path = os.getcwd()  + "/" + path
+    return path
 
 def create_file(input_path):
     if not os.path.exists(input_path):
