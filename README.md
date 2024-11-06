@@ -88,7 +88,7 @@ The BAM sample file is provided as below:
 
 ## Run FIAAU pipline
 
-FIAAU consists of two parts, one for running six methods and the other for integrating the results of the six methods.
+FIAAU consists of two parts, one for running six methods and the other for integrating the results of the six methods. Please do not change the structure of the original FIAAU directory.
 
 ### 6 methods process
 
