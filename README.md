@@ -20,6 +20,7 @@ Then, activate the `FIAAU` environment.
 ```
 conda activate FIAAU
 ```
+*NOTE:* Please ensure that your R is calling in the FIAAU environment.
 
 ### Install Perl package and local R package
 We have compiled a simple installation bash script, please run it directly.
@@ -27,7 +28,6 @@ We have compiled a simple installation bash script, please run it directly.
 ```
 bash install.sh
 ```
-*NOTE:* Please ensure that your R is calling in the FIAAU environment.
 
 ## Prepare annotation files and samples information files
 
