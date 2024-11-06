@@ -136,5 +136,5 @@ Usage: FIAAU_integrate.R [-[-help|h]] [-[-fiaau_dir|f] <character>] [-[-control|
 An example of running a command is provided as below:
 
 ```
-Rscript FIAAU_integrate.R -f /PATH/FIAAU_process_output -c control -t treatment
+Rscript FIAAU_integrate.R -f /PATH/FIAAU_process_output_dir -c control -t treatment
 ```
