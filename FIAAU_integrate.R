@@ -4,13 +4,13 @@ suppressMessages(library(this.path))
 
 options<-matrix(c(
   "help", "h", "0", "logical","help",
-  "fiaau_dir", "f", "1", "character","FIAAU dir",
+  "fiaau_dir", "f", "1", "character","FIAAU dir, the output dir for FIAAU_process.py",
   "control","c","1","character","control name",
   "treatment","t","1","character","treatment name",
   "over_num","n","2","integer","method overlap number, default: 2",
+  "qapa_cut","q","2","double","QAPA diff cutoff, default: 20",
   "p_met","pm","2","double","p value cutoff of each method, default: 0.05",
-  "p_int","pi","2","double","p_integrate cutoff, default: 0.05",
-  "qapa_cut","q","2","double","QAPA diff cutoff, default: 20"
+  "p_int","pi","2","double","p_integrate cutoff, default: 0.05"
 ), ncol=5, byrow=T)
 
 args=getopt(options)
