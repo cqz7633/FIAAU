@@ -319,6 +319,7 @@ dependencies:
   - tktable=2.10=h3d55465_1
   - toml=0.10.2=pyhd3eb1b0_0
   - tzdata=2024b=h04d1e81_0
+  - ucsc-bigwigtowig=357=0
   - ucsc-gtftogenepred=357=0
   - unicodedata2=15.1.0=py38h5eee18b_0
   - urllib3=2.2.3=py38h06a4308_0
