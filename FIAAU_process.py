@@ -125,7 +125,7 @@ def main():
         sys.exit(fq_ware)
     cond_list = [control, treatment]
     sub_dapars_sh, dapars_res = dapars_process(dapars_main, cond_list, bam_dict, out_path, core, dapars_bed, cov_cutoff, bin_size) #in groupA long:dpdui>0
-    sub_csiutr_sh, csiutr_res = csiutr_process(cond_list, bam_dict, out_path, csiutr_arg, csiutr_bed, csiutr_anno, csiutr_anno_dir) #long:dpsi>0
+    sub_csiutr_sh, csiutr_res = csiutr_process(csi_utr, cond_list, bam_dict, out_path, csiutr_arg, csiutr_bed, csiutr_anno, csiutr_anno_dir) #long:dpsi>0
     sub_diffutr_sh, diffutr_res = diffutr_process(diffutr_script, cond_list, bam_table, out_path, diffutr_bed, "diffUTR", cov_cutoff, reads_len)
     sub_qapa_sh, qapa_res = qapa_process(fq_table, cond_list, out_path, paired, qapa_genome_fa, qapa_utr, core, qapa_ident, qapa_diff_script)
     sub_apatrap_sh, apatrap_res = apatrap_process(cond_list, bam_dict, out_path, apatrap_identify, apatrap_predic, apatrap_deapa, geno_size, apatrap_genemodel, cov_cutoff)
