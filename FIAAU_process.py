@@ -6,7 +6,7 @@ from datetime import datetime
 
 from scripts.utils import *
 
-parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, description="full length utr processed")
+parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, description="FIAAU for 6 methods processed")
 parser.add_argument("-f", type=str, default="", help="absolute paths of fastq table txt file")
 parser.add_argument("-b", type=str, default="", help="absolute paths of bam table txt file")
 parser.add_argument("-c", type=str, default="", help="control")
