@@ -1,5 +1,5 @@
 # FIAAU
-We have integrated the processes and results of APAtrap, CSI-UTR, DaPars, diffUTR, LABRAT, and QAPA methods, and proposed the FIAAU (Framework for integrated analysis of alternative 3'UTR) based on Fisher transformation and weighted voting for dynamic change identification of 3' UTR.
+We have integrated the processes and results of APAtrap, CSI-UTR, DaPars, diffUTR, LABRAT, and QAPA methods, and proposed the FIAAU (Framework for integrated analysis of alternative 3' UTR) based on Fisher transformation and weighted voting for dynamic change identification of 3' UTR.
 
 ![Overview](./images/FIAAU_pipline.png)
 
