@@ -121,7 +121,7 @@ python FIAAU_process.py -f /PATH/FastQ_info.txt -b /PATH/Bam_info.txt -c control
 
 ### Integration results process
 
-The integration process is controlled by an R script, which will generate the FIAAU_integate directory under the output parameter directory of FIAAU_process.py and save the results here. Please be careful not to change the structure of the six method directories under the FIAAU process output directory. The integration section will read them in a relatively fixed path.  
+The integration process is controlled by an R script, which will generate the FIAAU_integate directory under the output parameter directory of FIAAU_process.py and save the results here. Please be careful not to change the structure of the six method directories and the names of the result files in the FIAAU process output directory. The integration section will read them in a relatively fixed path. 
 
 The parameters of the `FIAAU_integrate.R` script is provided as below:
 ```
