@@ -93,6 +93,7 @@ FIAAU consists of two parts, one for running six methods and the other for integ
 ### 6 methods process
 
 The operation of six methods is controlled by a Python script, with each method generating a Bash script and running simultaneously.  
+
 The parameters of the `FIAAU_process.py` script is provided as below:
 
 ```
@@ -121,6 +122,7 @@ python FIAAU_process.py -f /PATH/FastQ_info.txt -b /PATH/Bam_info.txt -c control
 ### Integration results process
 
 The integration process is controlled by an R script, which will generate the FIAAU_integate directory under the output parameter directory of FIAAU_process.py and save the results here. Please be careful not to change the structure of the six method directories under the FIAAU process output directory. The integration section will read them in a relatively fixed path.  
+
 The parameters of the `FIAAU_integrate.R` script is provided as below:
 ```
 Usage: FIAAU_integrate.R [-[-help|h]] [-[-fiaau_dir|f] <character>] [-[-control|c] <character>] [-[-treatment|t] <character>] [-[-over_num|n] [<integer>]] [-[-qapa_cut|q] [<double>]] [-[-p_met|pm] [<double>]] [-[-p_int|pi] [<double>]]
