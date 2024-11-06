@@ -166,7 +166,7 @@ def dapars_process(dapars_main, cond_list, bam_dict, out_path, core, dapars_bed,
     dapars_res = dapars_out + out_prefix + "_All_Prediction_Results.txt"
     return sub_dapars_com, dapars_res
 
-def csiutr_process(cond_list, bam_dict, out_path, csiutr_arg, csiutr_bed, csiutr_anno, csiutr_anno_dir):
+def csiutr_process(csi_utr, cond_list, bam_dict, out_path, csiutr_arg, csiutr_bed, csiutr_anno, csiutr_anno_dir):
     csiutr_file = out_path + "/CSI_UTR/"
     csiutr_data = csiutr_file + "process/"
     csiutr_out = csiutr_file + "out/"
@@ -194,7 +194,7 @@ def csiutr_process(cond_list, bam_dict, out_path, csiutr_arg, csiutr_bed, csiutr
     write_command(csiutr_sh_f, ln_anno_com)
     ln_bed_com = "ln -sf %s %s/locations/Mm10.CSIs.bed" % (csiutr_bed, csiutr_anno_dir)
     write_command(csiutr_sh_f, ln_bed_com)
-    csi_run = "CSI-UTR %s -sample_info %s -bed %s -annot %s -out %s -data_dir %s" % (csiutr_arg, csi_bam, csiutr_bed, csiutr_anno, csiutr_out, csiutr_data)
+    csi_run = "%s %s -sample_info %s -bed %s -annot %s -out %s -data_dir %s" % (csi_utr, csiutr_arg, csi_bam, csiutr_bed, csiutr_anno, csiutr_out, csiutr_data)
     write_command(csiutr_sh_f, csi_run)
     csiutr_sh_f.close()
     sub_csiutr_com = "nohup sh %s > %scsiutr.log 2>&1 &" % (csiutr_sh, csiutr_file)
