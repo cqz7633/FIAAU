@@ -40,7 +40,7 @@ cov_cutoff = args.ct
 if args.o == "/FIAAU":
     out_path = current_dir + args.o + "_" + formatted_time + "/"
 else:
-    out_path = args.o
+    out_path = check_path(args.o)
 
 # args judge
 if fq_table == "":
