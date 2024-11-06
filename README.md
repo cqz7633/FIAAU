@@ -27,6 +27,7 @@ We have compiled a simple installation bash script, please run it directly.
 ```
 bash install.sh
 ```
+*NOTE:* Please ensure that your R is calling in the FIAAU environment.
 
 ## Prepare annotation files and samples information files
 
