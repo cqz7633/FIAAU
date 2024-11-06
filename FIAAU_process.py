@@ -7,8 +7,8 @@ from datetime import datetime
 from scripts.utils import *
 
 parser = argparse.ArgumentParser(formatter_class=argparse.RawTextHelpFormatter, description="FIAAU for 6 methods processed")
-parser.add_argument("-f", type=str, default="", help="absolute paths of fastq table txt file")
-parser.add_argument("-b", type=str, default="", help="absolute paths of bam table txt file")
+parser.add_argument("-f", type=str, default="", help="absolute paths of fastq information file")
+parser.add_argument("-b", type=str, default="", help="absolute paths of bam information file")
 parser.add_argument("-c", type=str, default="", help="control")
 parser.add_argument("-t", type=str, default="", help="treatment")
 parser.add_argument("-p", type=str, default="y", help="paired or single ('y' or 'n') default: y")
