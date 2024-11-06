@@ -521,7 +521,7 @@ combres = function(res_list, comb_method_list, p_int, over_num){
     if(pred_over < over_num){
       pred = "none"
     }
-    tmp_df=data.frame(gene=i,pred=pred,p=p_comb,score=change_res$cp,method=length(method_list),
+    tmp_df=data.frame(gene=i,pred=pred,p_int=p_comb,score=change_res$cp,method=length(method_list),
                       method_over=pred_over,method=paste(method_list,collapse = ","),
                       method_type=paste(method_type_list,collapse = ","))
     if(flag == 1){
