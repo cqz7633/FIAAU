@@ -7,7 +7,7 @@ We have integrated the processes and results of APAtrap, CSI-UTR, DaPars, diffUT
 The installation process requires `Perl` and `Conda`, so you need to install them first.
 
 ### Create Environment with Conda
-First, download the repository and create the environment.
+First, download the repository and create the environment.Some dependencies related to the R language in yml may fail to download. If you encounter this issue, please try again a few times.
 
 ```
 git clone https://github.com/cqz7633/FIAAU.git
@@ -15,7 +15,7 @@ cd ./FIAAU/install
 conda env create -f environment.yml
 ```
 
-Then, activate the "FIAAU" environment.
+Then, activate the `FIAAU` environment.
 
 ```
 conda activate FIAAU
