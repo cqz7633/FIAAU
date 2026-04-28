@@ -374,7 +374,7 @@ csi_process = function(path,compare, merge_utr_list, csi_anno, p_met){
       p_list = c(p_list, tmp$FDR)
       diff_list = c(diff_list, tmp[,ncol(tmp)-2])
     }else{
-      p_comb = min(tmp$FDR) * nrow(tmp)
+      p_comb = min(tmp$FDR)
       comb_mat = t(combn(nrow(tmp), 2))
       diff = 0
       list1 = c()
