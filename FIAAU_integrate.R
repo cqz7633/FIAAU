@@ -197,7 +197,7 @@ apatrap_process = function(path, compare, trans, p_met){
         tmp_r_df = data.frame(gene = i, r=diff)
         tmp_p_df = data.frame(gene = i, p=p)
       }else{
-        p = min(tmp_res$p) * nrow(tmp_res)
+        p = min(tmp_res$p)
         diff = sum((1-tmp_res$p) * tmp_res$r)
         tmp_r_df = data.frame(gene = i, r=diff)
         tmp_p_df = data.frame(gene = i, p=p)
