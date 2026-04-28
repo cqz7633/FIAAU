@@ -443,7 +443,7 @@ combp = function(p_list){
   return(p_w)
 }
 combc = function(p_list, change_list){
-  change_point = weighted.mean(change_list, w = 1 - p_list)
+  change_point = weighted.mean(change_list, w = 1 - p_list, na.rm = TRUE)
   if(change_point==0){
     change = "none"
   }else if(change_point>0){
