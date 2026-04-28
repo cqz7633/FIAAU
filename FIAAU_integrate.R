@@ -197,7 +197,10 @@ apatrap_process = function(path, compare, trans, p_met){
         tmp_r_df = data.frame(gene = i, r=diff)
         tmp_p_df = data.frame(gene = i, p=p)
       }else{
-        p = min(tmp_res$p)
+        p_vals <- sort(tmp_res$p) 
+        n_sites <- length(p_vals)
+        p_comb <- min(p_vals * n_sites / (1:n_sites))
+        p <- min(1, p_comb) 
         diff = sum((1-tmp_res$p) * tmp_res$r)
         tmp_r_df = data.frame(gene = i, r=diff)
         tmp_p_df = data.frame(gene = i, p=p)
@@ -374,7 +377,10 @@ csi_process = function(path,compare, merge_utr_list, csi_anno, p_met){
       p_list = c(p_list, tmp$FDR)
       diff_list = c(diff_list, tmp[,ncol(tmp)-2])
     }else{
-      p_comb = min(tmp$FDR)
+      p_vals <- sort(tmp$FDR)
+      n_sites <- length(p_vals)
+      p_comb <- min(p_vals * n_sites / (1:n_sites))
+      p_comb <- min(1, p_comb)
       comb_mat = t(combn(nrow(tmp), 2))
       diff = 0
       list1 = c()
