@@ -1,5 +1,5 @@
 # PRIMA
-We have integrated the processes and results of APAtrap, CSI-UTR, DaPars, diffUTR, LABRAT, and QAPA methods, and proposed the PRIMA (Principled Integration of Multi-method APA analysis) based on Fisher transformation and weighted voting for dynamic change identification of 3' UTR.
+We have integrated the processes and results of APAtrap, CSI-UTR, DaPars, diffUTR, LABRAT, and QAPA methods, and proposed the PRIMA (PRincipled Integration of Multiple APA methods) based on Fisher transformation and weighted voting for dynamic change identification of 3' UTR.
 
 ![Overview](./images/FIAAU_pipline.png)
 
